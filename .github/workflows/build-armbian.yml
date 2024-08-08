@@ -12,7 +12,7 @@ on:
       set_release:
         description: "Select OS Release."
         required: false
-        default: "jammy"
+        default: "bullseye"
         type: choice
         options:
           - jammy
@@ -22,7 +22,7 @@ on:
       armbian_board:
         description: "Select device board."
         required: false
-        default: "all"
+        default: "s905l3-unt400g1"
         type: choice
         options:
           - all
@@ -173,6 +173,7 @@ on:
         options:
           - 5.4.y
           - 5.10.y
+          - 5.10.223
           - 5.15.y
           - 6.1.y
           - 6.6.y
